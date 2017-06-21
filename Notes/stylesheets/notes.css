@@ -114,7 +114,7 @@ Layout styles
 {
 	overflow: hidden;
 	min-height: 35em;
-	padding: 1em 1em;    
+	padding: 1em .8em;    
 	background: url(../images/notes-texture.jpg) no-repeat top center;
 	background-color: transparent;
 	
@@ -315,7 +315,7 @@ Wide styles
 	.main
 	{
 		float: left;
-		width: 65%;
+		width: 64%;
 		margin-right: 5%;
 		margin-top: 1em;
 	}
@@ -323,12 +323,12 @@ Wide styles
 	.aside
 	{
 		float: right;
-		width: 30%;
+		width: 29%;
 		margin-top: 1em;
 	}
 
 
-	.footer { padding: 2em .9em; }
+	.footer { padding: 2em .8em; }
 	
 	.nav li
 	{
