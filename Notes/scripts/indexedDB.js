@@ -274,9 +274,9 @@ function validate(){
 	}
 
 	if(document.getElementById('txt_GivenDate').value > document.getElementById('txt_DueDate').value){
-		document.getElementById('lbl_BriefDescriptionEmpty').style.display = 'block';  
-		document.getElementById('lbl_BriefDescriptionEmpty').style.display = 'inline';
-		document.getElementById('lbl_BriefDescriptionEmpty').display = 'inline-block';
+		document.getElementById('lbl_DueDateCheck').style.display = 'block';  
+		document.getElementById('lbl_DueDateCheck').style.display = 'inline';
+		document.getElementById('lbl_DueDateCheck').display = 'inline-block';
 		document.getElementById('hid_Error').value = 6;
 	}
 }
