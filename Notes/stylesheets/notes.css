@@ -73,8 +73,7 @@ textarea{
 	border-width: 1px;
 	text-align: left;
   	height: 20px;
-  	font-size: .875em; 
-  	font:  "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  	font-size: .875em;
     border-radius: 5px;
   	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -254,7 +253,9 @@ Single styles
 }
 
 .title-txt{
-    width: 95%;
+    width: 89%;
+    height: 1.5em;
+    text-align: left;
 }
 
 .briefDesc-txt{
@@ -268,12 +269,9 @@ Single styles
 }
 
 .input{
-	background-color: transparent;
-	text-align: center;
+	background-color: transparent;	
 	border-color: black;
-	border-width: 1px;
-	width: 150%;
-  	height: 20px;
+	border-width: 1px;	
   	font-size: .875em; 
   	font:  "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
     border-radius: 5px;
@@ -282,16 +280,21 @@ Single styles
 }
 
 .givenOn-txt{
-
+	width: 150%;
+  	height: 20px;
+  	text-align: center;
 }
 
 .givenBy-txt{
-	
-
+	width: 150%;
+  	height: 20px;
+  	text-align: center;
 }
 
 .dueOn-txt{
-
+	width: 150%;
+  	height: 20px;
+  	text-align: center;
 	/*padding-left: 50px;*/
 }
 
