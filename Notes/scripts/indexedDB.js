@@ -193,6 +193,8 @@ function viewNotes(noteID){
 
 function loadDefault(){
 	document.getElementById('display').style.display = 'none'; 
+	document.getElementById('addOrEdit').style.display = 'none'; 
+	document.getElementById('addBtn').disabled = false;
 	document.getElementById('default').style.display = 'block';  
 	document.getElementById('default').style.display = 'inline';
 	document.getElementById('default').display = 'inline-block';
