@@ -112,9 +112,9 @@ Layout styles
 
 .content
 {
-	overflow: auto;
+	overflow: hidden;
 	min-height: 35em;
-	padding: 1em 1.25em;    
+	padding: 1em 1em;    
 	background: url(../images/notes-texture.jpg) no-repeat top center;
 	background-color: transparent;
 	
@@ -328,7 +328,7 @@ Wide styles
 	}
 
 
-	.footer { padding: 2em 1em; }
+	.footer { padding: 2em .9em; }
 	
 	.nav li
 	{
