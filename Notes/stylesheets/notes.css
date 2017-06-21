@@ -69,6 +69,8 @@ a:active { color: red; }
 
 textarea{	
 	background-color: transparent;
+	border-color: black;
+	border-width: 1px;
 	text-align: left;
   	height: 20px;
   	font-size: .875em; 
