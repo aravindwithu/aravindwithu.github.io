@@ -212,14 +212,12 @@ single styles
 }
 
 .contact-section img {
- 	display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
+    height: 50%;
 }
 
 .contact-sent{
-	text-align: center;
+	text-align: left;
 }
 
 .contact-error{	
@@ -227,6 +225,58 @@ single styles
 	margin-right: 15px;
 	font-size: 1em;
 	color: #B33A3A;
+}
+
+#welcome{
+	text-align: center;
+}
+
+.welcome-h1{
+	margin-top: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 5em;
+}
+
+.welcome-h2{
+	margin-top: 20px; 
+	 margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+.welcome-h3{
+	margin-top: 30px; 
+	margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+}
+
+.welcome-h4{
+    font-size: 1em;
+}
+
+.welcome-footer{
+	margin-top: 20px; 
+	height: 50px;
+}
+
+.welcome-flex-container {
+	margin-top: 20px; 
+   	display: flex;
+   	flex-wrap: wrap;
+   	align-items: center;
+   	align-content: center;
+   	justify-content: space-around;
+}
+
+.welcome-flex-container div {
+  	margin: 10px;
+  	text-align: center;
+}
+
+#about_me{
+	text-align:justify;
 }
 
 /* -----------------------
