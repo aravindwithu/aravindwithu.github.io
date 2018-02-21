@@ -1,9 +1,8 @@
 
 document.getElementById("welcome").style.display = "block"; 
 
-document.getElementById("ct-sending").style.display = "none"; 
+refreshContact();
 
-document.getElementById("ct-sent").style.display = "none";
 
 function openTab(event, tabName) {
     var i, tabcontent, tablinks;
@@ -24,16 +23,27 @@ function openURL(event, link) {
 }
 
 function initMail() {
+    refreshContact();
     var name = document.getElementById('ct-name').value;
     var email = document.getElementById('ct-email').value;
     var subject = document.getElementById('ct-subject').value;
     var message = document.getElementById('ct-message').value;
+    var isValid = true;
 
-    document.getElementById("ct-form").style.display = "none";
+    if(name == ""){
+        document.getElementById("ct-err-name_mand").style.display = "block";
+        isValid = false;
+    }
+    if(email == ""){
+        document.getElementById("ct-err-email_mand").style.display = "block";
+        isValid = false
+    }else if(!isValidEmailAddress(email)){
+        document.getElementById("ct-err-valid_email").style.display = "block";
+        isValid = false;
+    }
 
-    if(name == "" || email == ""){
-        alert('Please enter both name and email (mandatory * fields).');
-    }else{
+    if(isValid){
+        document.getElementById("ct-form").style.display = "none";
         document.getElementById("ct-sending").style.display = "block";
         emailjs.send("gmail", "avenkit_services",
             {"name":name,"email":email,"subject":subject,"message":message})
@@ -45,3 +55,16 @@ function initMail() {
         });
     }
 }
+
+function refreshContact(){
+    document.getElementById("ct-sending").style.display = "none"; 
+    document.getElementById("ct-sent").style.display = "none";
+    document.getElementById("ct-err-name_mand").style.display = "none";
+    document.getElementById("ct-err-email_mand").style.display = "none";
+    document.getElementById("ct-err-valid_email").style.display = "none";
+}
+
+function isValidEmailAddress(emailAddress) {
+    var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+    return pattern.test(emailAddress);
+};
