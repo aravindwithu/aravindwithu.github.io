@@ -176,12 +176,12 @@ single styles
 	height: 1150px;
 }
 
-.contact-area {
+.contact-section {
 	width: 630px;
 	margin-top: 25px;
 }
 
-.contact-area input, textarea{
+.contact-section input, textarea{
 	padding: 5px;
 	width: 500px;
 	font-size: 1em;
@@ -189,15 +189,15 @@ single styles
 	border: 2px solid #ccc;
 }
 
-.contact-area textarea:focus, input:focus{
+.contact-section textarea:focus, input:focus{
 	border: 2px solid #900;
 }
 
-.contact-area textarea {
+.contact-section textarea {
 	height: 120px;
 }
 
-.contact-area label {
+.contact-section label {
 	float: left;
 	text-align: right;
 	margin-right: 15px;
@@ -206,9 +206,20 @@ single styles
 	font-size: 1em;
 }
 
-.contact-area input.submit-button {
+.contact-section input.submit-button {
 	width: 100px;
 	float: right;
+}
+
+.contact-section img {
+ 	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.contact-sent{
+	text-align: center;
 }
 
 /* -----------------------

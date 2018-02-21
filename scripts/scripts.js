@@ -1,6 +1,10 @@
 
 document.getElementById("welcome").style.display = "block"; 
 
+document.getElementById("ct-sending").style.display = "none"; 
+
+document.getElementById("ct-sent").style.display = "none";
+
 function openTab(event, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -25,13 +29,17 @@ function initMail() {
     var subject = document.getElementById('ct-subject').value;
     var message = document.getElementById('ct-message').value;
 
+    document.getElementById("ct-form").style.display = "none";
+
     if(name == "" || email == ""){
         alert('Please enter both name and email (mandatory * fields).');
     }else{
+        document.getElementById("ct-sending").style.display = "block";
         emailjs.send("gmail", "avenkit_services",
             {"name":name,"email":email,"subject":subject,"message":message})
         .then(function(response) {
-            alert('Message Sent, thankyou for contacting me.');
+            document.getElementById("ct-sending").style.display = "none";
+            document.getElementById("ct-sent").style.display = "block";
         }, function(err) {
             alert('Error - '+ err);
         });
