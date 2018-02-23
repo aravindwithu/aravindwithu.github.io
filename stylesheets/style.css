@@ -173,7 +173,7 @@ Layout styles
 single styles
 ------------------------*/
 .resume_body{
-	height: 1150px;
+	height: 1400px;
 }
 
 .contact-section {
@@ -242,14 +242,14 @@ single styles
 	margin-top: 20px; 
 	 margin-left: auto;
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .welcome-h3{
 	margin-top: 30px; 
 	margin-left: auto;
     margin-right: auto;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .welcome-h4{
@@ -269,11 +269,13 @@ single styles
    	align-items: center;
    	align-content: center;
    	justify-content: space-around;
+   	font-size: 1em;
 }
 
 .welcome-flex-container div {
   	margin: 10px;
   	text-align: center;
+  	font-size: 1em;
 }
 
 #about_me{
