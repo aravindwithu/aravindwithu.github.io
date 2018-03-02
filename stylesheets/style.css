@@ -280,6 +280,17 @@ single styles
 
 #about_me{
 	text-align:justify;
+	font-size: 1em;
+}
+
+.quots{
+	text-align: center;
+	color: grey;
+}
+
+.quots-by{
+	text-align: right !important;
+	color: grey;
 }
 
 /* -----------------------
