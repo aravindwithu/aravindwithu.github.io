@@ -2,29 +2,28 @@
 Base styles
 ------------------------*/
 
-body
+/*body
 {
 	margin: 0;
 	padding: 0;
 	color: black;
 	background: transparent;
-	/* url(../images/notes-texture.jpg) no-repeat top center;*/
 	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-}
+}*/
 
-h1,h2,h3,h4,h5,h6
+/*h1,h2,h3,h4,h5,h6
 {
 	margin: 0 0 .5em;
 	font-weight: 500;
 	line-height: 1.1;
 }
 
-h1 { font-size: 2.25em; } /* 36px */
-h2 { font-size: 1.75em; } /* 28px */
-h3 { font-size: 1.375em; } /* 22px */
-h4 { font-size: 1.125em; } /* 18px */
-h5 { font-size: 1em; } /* 16px */
-h6 { font-size: .875em; } /* 14px */
+h1 { font-size: 2.25em; } 
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.375em; }
+h4 { font-size: 1.125em; }
+h5 { font-size: 1em; } 
+h6 { font-size: .875em; }
 
 p
 {
@@ -68,13 +67,13 @@ a:link { color: royalblue; }
 a:visited { color: purple; }
 a:focus { color: black; }
 a:hover { color: green; }
-a:active { color: red; }
+a:active { color: red; }*/
 
 /* -----------------------
 Layout styles
 ------------------------*/
 
-.container
+/*.container
 {
 	max-width: 90%;
 	margin: 0 auto;
@@ -99,20 +98,17 @@ Layout styles
 {
 	overflow: auto;
 	min-height: 35em;
-	padding: 1em 1.25em;    
-	/*background: url(../images/notes-texture.jpg) no-repeat top center;*/
+	padding: 1em 1.25em;
 	background-color: transparent;
 	
-}
+}*/
 
-/* Style the tab */
-.tab {
+/*.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
     float: left;
@@ -124,17 +120,14 @@ Layout styles
     font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
 }
 
-/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -144,9 +137,9 @@ Layout styles
 
 .urllinks{
 	float:right;
-}
+}*/
 
-.input{
+/*.input{
 	height: 25px;
 	width: 300%;
 }
@@ -159,7 +152,6 @@ Layout styles
 	position: relative;
 	width: 98%;
     color: black;
-	/*background: url(../images/notes-texture.jpg) no-repeat top center;*/
   	bottom: 0;
   	text-align: center;
   	padding-right: 1em;
@@ -167,16 +159,16 @@ Layout styles
 
 .footerDiv{
 	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-}
+}*/
 
 /* -----------------------
 single styles
 ------------------------*/
-.resume_body{
+/*.resume_body{
 	height: 1400px;
 }
 
-.contact-section {
+/*.contact-section {
 	width: 630px;
 	margin-top: 25px;
 }
@@ -281,23 +273,23 @@ single styles
 #about_me{
 	text-align:justify;
 	font-size: 1em;
-}
+}*/
 
-.quots{
+/*.quots{
 	text-align: center;
 	color: grey;
-}
+}*/
 
-.quots-by{
+/*.quots-by{
 	text-align: right !important;
 	color: grey;
-}
+}*/
 
 /* -----------------------
 Wide styles
 ------------------------*/
 
-@media (min-width: 55em)
+/*@media (min-width: 55em)
 {
 	.header { padding: 1.5em 3em; }
 	.content { padding: 2em 3em; }	
@@ -319,4 +311,4 @@ Wide styles
 
 
 	.footer { padding: 3em 1em; }
-}
+}*/

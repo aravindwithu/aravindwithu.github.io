@@ -1,10 +1,16 @@
 
-document.getElementById("welcome").style.display = "block"; 
-
-refreshContact();
 
 
-function openTab(event, tabName) {
+
+//refreshContact();
+
+
+function openTab(event, tabID) {
+    document.getElementById(tabID).click();
+}
+
+
+/*function openTab(event, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -16,7 +22,7 @@ function openTab(event, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     event.currentTarget.className += " active";
-}
+}*/
 
 function openURL(event, link) {
     location.href = link;
