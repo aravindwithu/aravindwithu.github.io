@@ -2,6 +2,10 @@
 
 refreshContact();
 
+(function(){
+    emailjs.init("user_TxCaAKYp5TE4Evs3vh6xh");
+})();
+
 function openTab(event, tabID) {
     document.getElementById(tabID).click();
 }
@@ -11,6 +15,7 @@ function openURL(event, link) {
 }
 
 function initMail() {
+    console.log("1");
     refreshContact();
     var name = document.getElementById('ct-name').value;
     var email = document.getElementById('ct-email').value;
@@ -18,6 +23,7 @@ function initMail() {
     var message = document.getElementById('ct-message').value;
     var isValid = true;
 
+    console.log("2");
     if(name == ""){
         document.getElementById("ct-err-name_mand").style.display = "block";
         isValid = false;
@@ -29,6 +35,8 @@ function initMail() {
         document.getElementById("ct-err-valid_email").style.display = "block";
         isValid = false;
     }
+
+    console.log(isValid);
 
     if(isValid){
         document.getElementById("ct-form").style.display = "none";
