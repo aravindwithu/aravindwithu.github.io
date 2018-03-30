@@ -44,8 +44,11 @@ function initMail() {
         emailjs.send("gmail", "avenkit_services",
             {"name":name,"email":email,"subject":subject,"message":message})
         .then(function(response) {
-            document.getElementById("ct-sending").style.display = "none";
-            document.getElementById("ct-sent").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("ct-sending").style.display = "none";
+                document.getElementById("ct-sent").style.display = "block";
+            }, 3500);
+            
         }, function(err) {
             alert('Error - '+ err);
         });
