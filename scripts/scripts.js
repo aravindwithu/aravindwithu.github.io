@@ -6,6 +6,14 @@ refreshContact();
     emailjs.init("user_TxCaAKYp5TE4Evs3vh6xh");
 })();
 
+function imgH_out() {
+    document.getElementById("imgH").src="images/அ.png";
+}
+
+function imgH_over() {
+    document.getElementById("imgH").src="images/a.png";
+}
+
 function openTab(event, tabID) {
     document.getElementById(tabID).click();
 }
