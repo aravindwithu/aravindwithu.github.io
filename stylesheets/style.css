@@ -3,11 +3,12 @@ p{
 }
 
 main{
-	min-height: 650px;
+	min-height: 40em;
+	margin-top: 5em;
 }
 
 .img-h{
-	margin-top: 40px;
-	height: 100px;
-	width: 100px;
+	margin-top: 40em;
+	height: 100em;
+	width: 100em;
 }
